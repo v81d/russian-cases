@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description"
+        content="Complete exercises on the six Russian cases. Explore their uses, endings for nouns, adjectives, and pronouns, along with practice questions.">
+    <meta name="keywords"
+        content="Russian, language, Russia, nominative case, Russian grammar, Russian language, cases">
+    <meta name="author" content="Russian Cases">
+    <meta property="og:site_name" content="Russian Cases - Русские Падежи">
+    <meta property="og:title" content="Practice | Russian Cases">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://russiancases.sharestaging.com/media/banner.jpg">
+    <meta property="og:image:alt" content="The Six Russian Grammatical Cases">
+    <meta property="og:url" content="https://russiancases.sharestaging.com/nominative">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://russiancases.sharestaging.com/media/banner.jpg">
+    <meta name="robots" content="index, follow">
+    <title>Practice | Russian Cases</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/practice.css">
+    <link rel="shortcut icon" href="/logo.png" type="image/png">
+</head>
+
+<body>
+    <div class="container transition-fade">
+        <header>
+            <h1><a href="/" class="back-link"><strong>«</strong></a>&ensp;Russian Cases Practice</h1>
+        </header>
+
+        <section id="onboarding" style="display: none;">
+            <div id="progress-container"></div>
+
+            <div id="onboarding-container">
+                <h3 id="onboarding-question">How many questions should the quiz contain?</h3>
+                <div id="onboarding-content">
+                    <button class="controller" onclick="questionCount.stepDown()" title="Decrease Value"
+                        aria-label="Decrease Value">–</button>
+                    <input type="number" id="questionCount" placeholder="Input the number of questions..."
+                        autocomplete="off" value="15" />
+                    <button class="controller" onclick="questionCount.stepUp()" title="Increase Value"
+                        aria-label="Increase Value">+</button>
+                </div>
+            </div>
+
+            <div id="next-container">
+                <a id="next-button" href="#" class="button next">Begin</a>
+            </div>
+        </section>
+
+        <section id="quiz" style="display: block;">
+            <div id="progress-container">
+                <div id="bar-container">
+                    <div id="progress-display"></div>
+                </div>
+            </div>
+
+            <div id="quiz-container">
+                <h3 id="question"></h3>
+                <div id="quiz-content">
+                    <!-- Buttons, inputs, etc. will be placed here -->
+                </div>
+            </div>
+
+            <div id="submit-container">
+                <div id="return-container">
+                    <a id="return" href="/practice">
+                        <svg id="svg" height="30" viewBox="0 0 512 512" width="30" xmlns="http://www.w3.org/2000/svg">
+                            <polyline points="112 352 48 288 112 224"
+                                style="fill: none; stroke: #FF6F61; stroke-linecap: round; stroke-linejoin: round; stroke-width: 30px;" />
+                            <path d="M64,288H358c58.76,0,106-49.33,106-108V160"
+                                style="fill: none; stroke: #FF6F61; stroke-linecap: round; stroke-linejoin: round; stroke-width: 30px;" />
+                        </svg>
+                    </a>
+                </div>
+                <a id="submit-button" href="#" class="button submit ignore-redirect">Continue</a>
+            </div>
+        </section>
+    </div>
+
+    <script src="/practice.js"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>

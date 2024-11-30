@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+/* Reset basic elements */
+html,
+body {
+    overflow-x: hidden;
+    overscroll-behavior-x: none;
+}
+
+body {
+    display: none;
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* General styling */
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.6;
+    padding: 50px 10px;
+    position: relative;
+}
+
+@media screen and (max-width: 950px) {
+    body {
+        padding: 0 !important;
+    }
+
+    /* Container styling */
+    .container {
+        background: #fff;
+        padding: 40px;
+    }
+}
+
+@media screen and (min-width: 951px) {
+    /* Background styling */
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("/background.jpg");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center;
+        background-size: cover;
+        z-index: -1000;
+    }
+
+    /* Gradient overlay */
+    body::after {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.1)
+        );
+        pointer-events: none;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        z-index: -999;
+    }
+
+    /* Container styling */
+    .container {
+        max-width: 60%;
+        margin: auto;
+        background: #fff;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0 10px 36px 0,
+            rgba(0, 0, 0, 0.06) 0 0 0 4px, rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
+    }
+}
+
+/* Swup transition styling */
+.transition-fade {
+    transform: translateX(0);
+    transition: 500ms;
+}
+
+html.is-animating .transition-fade {
+    transform: translateX(calc(100vw));
+}
+
+html.is-leaving .transition-fade {
+    transform: translateX(calc(-100vw));
+}
+
+/* Headings styling */
+h1 {
+    font-size: 2em;
+    padding-bottom: 20px;
+    color: #444;
+}
+
+h2 {
+    font-size: 1.5em;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    color: #666;
+}
+
+h3 {
+    font-size: 1.2em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Paragraph styling */
+p {
+    margin-bottom: 10px;
+}
+
+/* List styling */
+ul,
+ol {
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.case-list li {
+    margin-bottom: 15px;
+}
+
+/* Link styling */
+a {
+    -webkit-touch-callout: none;
+    -webkit-user-drag: none;
+    color: #ff6f61;
+    text-decoration: none;
+}
+
+.back-link {
+    color: #ff6f61;
+    display: inline-block;
+    transition: 500ms;
+}
+
+.back-link:hover {
+    color: #e03c31;
+    text-decoration: none;
+}
+
+/* Button styling */
+.button-container {
+    display: grid;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Default to 2x3 grid layout for regular-sized screens */
+@media (min-width: 1060px) {
+    .button-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+/* Switch to 3x2 grid layout for smaller screens */
+@media (min-width: 480px) and (max-width: 1060px) {
+    .button-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+/* Switch to 6x1 grid layout for very small screens */
+@media (max-width: 479px) {
+    .button-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+}
+
+.button,
+button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    color: #fff;
+    background-color: #ff6f61;
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 400ms ease;
+    min-width: 150px;
+    box-sizing: border-box;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
+}
+
+.button:hover,
+button:hover {
+    background-color: #ff4f3f;
+    transform: translateY(-2px);
+    scale: 1.01;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
+    cursor: pointer;
+}
+
+.button:active,
+button:active {
+    background-color: #e03c31;
+    transform: none;
+    scale: 1;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    outline: none;
+}
+
+.extended {
+    width: 100%;
+}
+
+/* Overview section styling */
+.overview {
+    text-align: left;
+}
+
+.overview h2 {
+    margin: 20px 0 15px;
+    font-size: 1.5em;
+    color: #666;
+}
+
+.overview p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+#disqus_thread {
+    margin-top: 50px;
+}
+
+/* General styling for collapsible elements */
+.collapsible {
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Edge */
+    user-select: none; /* Standard syntax */
+    position: relative; /* For positioning of the sliding line */
+    transition: line-height 300ms ease;
+}
+
+/* Hover state for collapsible */
+.collapsible:hover {
+    line-height: 1.9;
+}
+
+/* Icon before the collapsible text */
+.collapsible::before {
+    content: "\002B"; /* Unicode for plus (expand) */
+    font-weight: normal;
+    color: #999;
+    position: relative;
+    margin-right: 0.7em; /* Adjust positioning */
+    transform: rotate(0);
+    background-color: transparent;
+    border-radius: 50%; /* Ensure it is a circle */
+    width: 1em;
+    height: 1em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: content 150ms ease, transform 300ms ease,
+        background-color 300ms ease;
+    transition-behavior: allow-discrete;
+}
+
+/* Hover state for icon */
+.collapsible:hover::before {
+    background-color: rgba(0, 0, 0, 0.1); /* Light circle background on hover */
+}
+
+.collapsible:active::before {
+    background-color: rgba(
+        0,
+        0,
+        0,
+        0.15
+    ); /* Slightly darker circle background on active */
+}
+
+.collapsible.default::before {
+    content: "\002B"; /* Unicode for plus (expand) */
+}
+
+.collapsible:not(.default)::before {
+    content: "\2212"; /* Unicode for minus (collapse) */
+}
+
+/* Signs for default collapsibles */
+.collapsible.default.active::before {
+    content: "\2212"; /* Unicode for minus (collapse) */
+    transform: rotate(180deg); /* Flip minus sign */
+}
+
+/* Signs for non-default collapsibles */
+.collapsible:not(.default).active::before {
+    content: "\002B"; /* Unicode for plus (expand) */
+    transform: rotate(-180deg); /* Flip minus sign */
+}
+
+/* Style for elements directly following the collapsible */
+section > .collapsible + * {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin: 0;
+    display: none; /* Ensure the element is hidden initially */
+    transition: all 400ms ease;
+}
+
+/* Expanded state styles for elements directly following the collapsible */
+section > .collapsible.active + * {
+    display: block; /* Ensure the element is visible */
+    max-height: 9999px; /* Large value to accommodate content */
+    opacity: 1;
+    margin: revert;
+    transition: all 400ms ease;
+}
+
+/* Style for all following siblings after the direct next sibling */
+section > .collapsible + * ~ * {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin: 0;
+    display: none; /* Ensure the element is hidden initially */
+    transition: all 400ms ease;
+}
+
+/* Expanded state styles for all following siblings */
+section > .collapsible.active + * ~ * {
+    display: block; /* Ensure the element is visible */
+    max-height: 9999px; /* Large value to accommodate content */
+    opacity: 1;
+    margin: revert;
+    transition: all 400ms ease;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x: auto !important;
+}
+
+th {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+    font-weight: inherit;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
