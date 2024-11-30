@@ -1,0 +1,583 @@
+[
+    {
+        "type": "multiple-choice",
+        "question": "When you say \"Я вижу собаку,\" what case is used for \"собака\"?",
+        "options": [
+            "Nominative",
+            "Accusative",
+            "Dative",
+            "Instrumental"
+        ],
+        "correct": 1,
+        "correctAnswer": "Accusative"
+    },
+    {
+        "type": "true-false",
+        "question": "In Russian, the dative case is used to indicate the direct object of a sentence.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 1,
+        "correctAnswer": "False"
+    },
+    {
+        "type": "open-ended",
+        "question": "What is the genitive singular form of \"стол\" (table)?",
+        "correctAnswer": "стола"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "If you say \"Я говорю о книге,\" what case is \"книга\" in?",
+        "options": [
+            "Nominative",
+            "Accusative",
+            "Genitive",
+            "Prepositional"
+        ],
+        "correct": 3,
+        "correctAnswer": "Prepositional"
+    },
+    {
+        "type": "true-false",
+        "question": "The instrumental case is used to show the means by which an action is performed.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 0,
+        "correctAnswer": "True"
+    },
+    {
+        "type": "open-ended",
+        "question": "Enter the correct form of \"friend\" in the phrase \"I trust my friend\" in Russian.",
+        "correctAnswer": "другу"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "Which form of \"деньги\" (money) would you use in the phrase \"У меня нет _____\"?",
+        "options": [
+            "деньги",
+            "денег",
+            "деньгам",
+            "деньгами"
+        ],
+        "correct": 1,
+        "correctAnswer": "денег"
+    },
+    {
+        "type": "true-false",
+        "question": "The nominative case is used for the subject of a sentence.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 0,
+        "correctAnswer": "True"
+    },
+    {
+        "type": "open-ended",
+        "question": "What is the dative singular form of \"книга\" (book)?",
+        "correctAnswer": "книге"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "In the sentence \"Я поеду к бабушке,\" what case is used for \"бабушка\"?",
+        "options": [
+            "Nominative",
+            "Accusative",
+            "Dative",
+            "Genitive"
+        ],
+        "correct": 2,
+        "correctAnswer": "Dative"
+    },
+    {
+        "type": "true-false",
+        "question": "In Russian, the genitive case is used to show possession.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 0,
+        "correctAnswer": "True"
+    },
+    {
+        "type": "open-ended",
+        "question": "Enter the correct form of \"language\" in the phrase \"I am studying the Russian language\" in Russian.",
+        "correctAnswer": "язык"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "If you want to say \"I bought a gift for my mother,\" which case of \"мама\" should you use?",
+        "options": [
+            "мама",
+            "мамы",
+            "маме",
+            "мамой"
+        ],
+        "correct": 2,
+        "correctAnswer": "маме"
+    },
+    {
+        "type": "true-false",
+        "question": "The accusative case can indicate direction in Russian.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 0,
+        "correctAnswer": "True"
+    },
+    {
+        "type": "open-ended",
+        "question": "What is the instrumental plural form of \"друзья\" (friends)?",
+        "correctAnswer": "друзьями"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "How would you say \"I need to go to the store\"? What case is used for \"магазин\"?",
+        "options": [
+            "Nominative",
+            "Accusative",
+            "Genitive",
+            "Dative"
+        ],
+        "correct": 1,
+        "correctAnswer": "Accusative"
+    },
+    {
+        "type": "true-false",
+        "question": "The prepositional case is used after certain prepositions to indicate location or topic.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 0,
+        "correctAnswer": "True"
+    },
+    {
+        "type": "open-ended",
+        "question": "Enter the correct form of \"семья\" in the phrase \"She is talking about her family\" in Russian.",
+        "correctAnswer": "семье"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "Which form of \"город\" (city) is used in the phrase \"Я еду в _____\"?",
+        "options": [
+            "город",
+            "города",
+            "городу",
+            "городом"
+        ],
+        "correct": 0,
+        "correctAnswer": "город"
+    },
+    {
+        "type": "true-false",
+        "question": "In Russian, the word order does not affect the case endings of nouns.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 0,
+        "correctAnswer": "True"
+    },
+    {
+        "type": "open-ended",
+        "question": "What is the genitive singular form of \"кот\" (cat)?",
+        "correctAnswer": "кота"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "How would you say \"I love to read books\"? What case is used for \"книги\"?",
+        "options": [
+            "Nominative",
+            "Accusative",
+            "Genitive",
+            "Dative"
+        ],
+        "correct": 1,
+        "correctAnswer": "Accusative"
+    },
+    {
+        "type": "open-ended",
+        "question": "Enter the correct form of \"друг\" in the phrase \"I am writing a letter to my friend\" in Russian.",
+        "correctAnswer": "другу"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "In the phrase \"Я думаю о _____,\" which case and form of \"работа\" should you use?",
+        "options": [
+            "работа",
+            "работы",
+            "работе",
+            "работой"
+        ],
+        "correct": 2,
+        "correctAnswer": "работе"
+    },
+    {
+        "type": "true-false",
+        "question": "The instrumental case can indicate the agent of an action.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 0,
+        "correctAnswer": "True"
+    },
+    {
+        "type": "open-ended",
+        "question": "What is the dative plural form of \"город\" (city)?",
+        "correctAnswer": "городам"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "If you say \"Я горжусь своим успехом,\" what case is used for \"успех\"?",
+        "options": [
+            "Nominative",
+            "Accusative",
+            "Genitive",
+            "Instrumental"
+        ],
+        "correct": 3,
+        "correctAnswer": "Instrumental"
+    },
+    {
+        "type": "true-false",
+        "question": "The nominative case is used for the subject and predicate nominatives in Russian.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 0,
+        "correctAnswer": "True"
+    },
+    {
+        "type": "open-ended",
+        "question": "Enter the correct form of \"друг\" in the phrase \"I am waiting for my friend\" in Russian.",
+        "correctAnswer": "друга"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "Which form of \"человек\" (person) is used in the phrase \"This is the man I was talking about\"?",
+        "options": [
+            "человек",
+            "человека",
+            "человеку",
+            "человеком"
+        ],
+        "correct": 0,
+        "correctAnswer": "человек"
+    },
+    {
+        "type": "true-false",
+        "question": "In Russian, all nouns have the same case endings regardless of gender.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 1,
+        "correctAnswer": "False"
+    },
+    {
+        "type": "open-ended",
+        "question": "What is the accusative singular form of \"мир\" (world)?",
+        "correctAnswer": "мир"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "How would you express \"I like swimming in the sea\"? What case and form of \"sea\" (in Russian) should you use?",
+        "options": [
+            "море",
+            "моря",
+            "морю",
+            "морем"
+        ],
+        "correct": 0,
+        "correctAnswer": "море"
+    },
+    {
+        "type": "true-false",
+        "question": "The genitive case can indicate a source or origin.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 0,
+        "correctAnswer": "True"
+    },
+    {
+        "type": "open-ended",
+        "question": "What is the instrumental singular form of \"машина\" (car)?",
+        "correctAnswer": "машиной"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "Which of the following is the correct form of \"телефон\" in the instrumental case?",
+        "options": [
+            "телефона",
+            "телефону",
+            "телефоном",
+            "телефоне"
+        ],
+        "correct": 2,
+        "correctAnswer": "телефоном"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "Which of following incorrectly declines \"братья\" in the context of the sentence?",
+        "options": [
+            "У меня два брата",
+            "Их братьями любят прыгать",
+            "У тебя есть братья",
+            "Мы братья"
+        ],
+        "correct": 1,
+        "correctAnswer": "Их братьями любят прыгать"
+    },
+    {
+        "type": "open-ended",
+        "question": "What is \"коробке\" (prepositional case of \"box\") in the nominative case?",
+        "correctAnswer": "коробка"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "You're at a Russian restaurant. How would you say \"I want tea\" using the correct case for \"чай\" (tea)?",
+        "options": [
+            "Я хочу чай",
+            "Я хочу чая",
+            "Я хочу чаю",
+            "Я хочу чаем"
+        ],
+        "correct": 2,
+        "correctAnswer": "Я хочу чаю"
+    },
+    {
+        "type": "true-false",
+        "question": "When saying \"I'm afraid of spiders\" in Russian, you would use the genitive case for \"spiders.\"",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 0,
+        "correctAnswer": "True"
+    },
+    {
+        "type": "open-ended",
+        "question": "What's the accusative singular form of \"окно\" (window) in the phrase \"I see a window\"?",
+        "correctAnswer": "окно"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "You're giving directions to a tourist. How would you say \"Turn left at the museum\" using the correct case for \"музей\" (museum)?",
+        "options": [
+            "Поверните налево у музей",
+            "Поверните налево у музея",
+            "Поверните налево у музею",
+            "Поверните налево у музеем"
+        ],
+        "correct": 1,
+        "correctAnswer": "Поверните налево у музея"
+    },
+    {
+        "type": "true-false",
+        "question": "The phrase \"Я горжусь тобой\" (I'm proud of you) uses the instrumental case.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 0,
+        "correctAnswer": "True"
+    },
+    {
+        "type": "open-ended",
+        "question": "What's the prepositional singular form of \"сад\" (garden) in the phrase \"We're talking about the garden\"?",
+        "correctAnswer": "саде"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "You're shopping for groceries. How would you ask \"Do you have any milk?\" using the correct case for \"молоко\" (milk)?",
+        "options": [
+            "У вас есть молоко?",
+            "У вас есть молока?",
+            "У вас есть молоку?",
+            "У вас есть молоком?"
+        ],
+        "correct": 0,
+        "correctAnswer": "У вас есть молоко?"
+    },
+    {
+        "type": "true-false",
+        "question": "The phrase \"Я живу в Москве\" (I live in Moscow) uses the prepositional case.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 0,
+        "correctAnswer": "True"
+    },
+    {
+        "type": "open-ended",
+        "question": "What's the dative singular form of \"кошка\" (cat) in the phrase \"I gave food to the cat\"?",
+        "correctAnswer": "кошке"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "You're at a party. How would you say \"I'm dancing with my friend\" using the correct case for \"друг\" (friend)?",
+        "options": [
+            "Я танцую с друг",
+            "Я танцую с друга",
+            "Я танцую с другу",
+            "Я танцую с другом"
+        ],
+        "correct": 3,
+        "correctAnswer": "Я танцую с другом"
+    },
+    {
+        "type": "true-false",
+        "question": "The phrase \"У меня нет времени\" (I don't have time) uses the accusative case for \"время\" (time).",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 1,
+        "correctAnswer": "False"
+    },
+    {
+        "type": "open-ended",
+        "question": "What's the genitive plural form of \"яблоко\" (apple) in the phrase \"a basket of apples\"?",
+        "correctAnswer": "яблок"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "You're at a bus stop. How would you ask \"When does the bus to the center arrive?\" using the correct case for \"центр\" (center)?",
+        "options": [
+            "Когда приходит автобус в центр?",
+            "Когда приходит автобус в центра?",
+            "Когда приходит автобус в центру?",
+            "Когда приходит автобус в центре?"
+        ],
+        "correct": 0,
+        "correctAnswer": "Когда приходит автобус в центр?"
+    },
+    {
+        "type": "true-false",
+        "question": "The phrase \"Я люблю кофе с молоком\" (I like coffee with milk) uses the instrumental case for \"молоко.\"",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 0,
+        "correctAnswer": "True"
+    },
+    {
+        "type": "open-ended",
+        "question": "What's the accusative singular form of \"врач\" (doctor) in the phrase \"I called the doctor\"?",
+        "correctAnswer": "врача"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "You're describing your family. How would you say \"I have two brothers\" using the correct case for \"брат\" (brother)?",
+        "options": [
+            "У меня два брат",
+            "У меня два брата",
+            "У меня два брату",
+            "У меня два братом"
+        ],
+        "correct": 1,
+        "correctAnswer": "У меня два брата"
+    },
+    {
+        "type": "true-false",
+        "question": "The phrase \"Я иду к врачу\" (I'm going to the doctor) uses the dative case for \"врач.\"",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 0,
+        "correctAnswer": "True"
+    },
+    {
+        "type": "open-ended",
+        "question": "What's the instrumental singular form of \"ручка\" (pen) in the phrase \"I write with a pen\"?",
+        "correctAnswer": "ручкой"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "You're at a hotel. How would you say \"The key to my room, please\" using the correct case for \"комната\" (room)?",
+        "options": [
+            "Ключ от моя комната, пожалуйста",
+            "Ключ от моей комнаты, пожалуйста",
+            "Ключ от моей комнате, пожалуйста",
+            "Ключ от мою комнату, пожалуйста"
+        ],
+        "correct": 1,
+        "correctAnswer": "Ключ от моей комнаты, пожалуйста"
+    },
+    {
+        "type": "true-false",
+        "question": "The phrase \"Я думаю о будущем\" (I'm thinking about the future) uses the prepositional case for \"будущее.\"",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 0,
+        "correctAnswer": "True"
+    },
+    {
+        "type": "open-ended",
+        "question": "What's the genitive singular form of \"вода\" (water) in the phrase \"a glass of water\"?",
+        "correctAnswer": "воды"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "You're at a concert. How would you say \"I'm a fan of this singer\" using the correct case for \"певец\" (singer)?",
+        "options": [
+            "Я фанат этот певец",
+            "Я фанат этого певца",
+            "Я фанат этому певцу",
+            "Я фанат этим певцом"
+        ],
+        "correct": 1,
+        "correctAnswer": "Я фанат этого певца"
+    },
+    {
+        "type": "true-false",
+        "question": "The phrase \"Мы гуляем по парку\" (We're walking in the park) uses the dative case for \"парк.\"",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 1,
+        "correctAnswer": "False"
+    },
+    {
+        "type": "open-ended",
+        "question": "What's the prepositional singular form of \"дом\" (house) in the phrase \"We're talking about the house\"?",
+        "correctAnswer": "доме"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "You're ordering food. How would you say \"I'd like a plate of soup\" using the correct case for \"суп\" (soup)?",
+        "options": [
+            "Я хочу тарелку суп",
+            "Я хочу тарелку супа",
+            "Я хочу тарелку супу",
+            "Я хочу тарелку супом"
+        ],
+        "correct": 1,
+        "correctAnswer": "Я хочу тарелку супа"
+    },
+    {
+        "type": "true-false",
+        "question": "The phrase \"Я рад встрече\" (I'm happy about the meeting) uses the dative case for \"встреча.\"",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 1,
+        "correctAnswer": "False"
+    }
+]
