@@ -6,14 +6,13 @@ let currentQuestionIndex = -1;
 let correctAnswers = 0;
 let answeredQuestions = 0;
 let finished = false;
-let userAnswers = []; // Array to track user answers and correctness
+let userAnswers = [];
 
 document.querySelector("#next-button").addEventListener("click", (event) => {
     event.preventDefault();
     handleNext();
 });
 
-// Function to load the practice.json file
 async function loadQuestions() {
     try {
         const response = await fetch("/json/practice.json");
@@ -64,7 +63,6 @@ function handleNext() {
     }
 }
 
-// Helper function to shuffle an array
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -73,7 +71,6 @@ function shuffleArray(array) {
     return array;
 }
 
-// Function to display a random question
 function showRandomQuestion() {
     if (
         answeredQuestions >= totalQuestions ||
@@ -85,7 +82,6 @@ function showRandomQuestion() {
 
     let randomIndex;
 
-    // Find a random index that hasn't been asked yet
     do {
         randomIndex = Math.floor(Math.random() * questions.length);
     } while (askedQuestions.includes(randomIndex));
@@ -94,15 +90,13 @@ function showRandomQuestion() {
     currentQuestionIndex = randomIndex;
     const questionData = questions[currentQuestionIndex];
 
-    // Update the HTML elements
     const questionElement = document.getElementById("question");
     const quizContent = document.getElementById("quiz-content");
 
     questionElement.textContent = questionData.question;
-    quizContent.innerHTML = ""; // Clear previous options
+    quizContent.innerHTML = "";
 
     if (questionData.type === "multiple-choice") {
-        // Shuffle options for multiple-choice questions
         const shuffledOptions = questionData.options
             .map((option, index) => ({ text: option, originalIndex: index }))
             .sort(() => Math.random() - 0.5);
@@ -134,7 +128,6 @@ function showRandomQuestion() {
             quizContent.appendChild(label);
         });
     } else if (questionData.type === "true-false") {
-        // Do not shuffle options for true/false questions
         questionData.options.forEach((option, index) => {
             const label = document.createElement("label");
             label.className = "quiz-label";
@@ -170,16 +163,15 @@ function showRandomQuestion() {
     updateProgress();
 }
 
-// Function to handle submit action
 function handleSubmit() {
     const submitButton = document.getElementById("submit-button");
-    submitButton.disabled = true; // Disable the button
+    submitButton.disabled = true;
 
     if (currentQuestionIndex === -1) {
         console.error("No question is currently being displayed.");
         return;
     } else if (finished === true) {
-        window.location.href = "/practice";
+        window.location.href = "/practice.html";
         return;
     }
 
@@ -195,11 +187,11 @@ function handleSubmit() {
             const userAnswerIndex = parseInt(selectedOption.value, 10);
             const originalIndex =
                 questionData.shuffledOptions[userAnswerIndex].originalIndex;
-            isCorrect = originalIndex === questionData.correct; // Check against original index
-            userAnswerText = questionData.options[originalIndex]; // Get the original option text
+            isCorrect = originalIndex === questionData.correct;
+            userAnswerText = questionData.options[originalIndex];
         } else {
             isCorrect = false;
-            userAnswerText = ""; // No answer selected
+            userAnswerText = "";
         }
     } else if (questionData.type === "true-false") {
         const selectedOption = document.querySelector(
@@ -207,11 +199,11 @@ function handleSubmit() {
         );
         if (selectedOption) {
             const userAnswerIndex = parseInt(selectedOption.value, 10);
-            isCorrect = userAnswerIndex === questionData.correct; // Directly check against the correct answer index
-            userAnswerText = questionData.options[userAnswerIndex]; // Get the selected answer text
+            isCorrect = userAnswerIndex === questionData.correct;
+            userAnswerText = questionData.options[userAnswerIndex];
         } else {
             isCorrect = false;
-            userAnswerText = ""; // No answer selected
+            userAnswerText = "";
         }
     } else if (questionData.type === "open-ended") {
         userAnswerText = document
@@ -222,12 +214,10 @@ function handleSubmit() {
             questionData.correctAnswer.toLowerCase();
     }
 
-    // Update the score if the answer is correct
     if (isCorrect) {
         correctAnswers++;
     }
 
-    // Record the user answer and correctness
     userAnswers.push({
         question: questionData.question,
         userAnswer: userAnswerText,
@@ -236,17 +226,15 @@ function handleSubmit() {
     });
 
     answeredQuestions++;
-    showRandomQuestion(); // Show another random question
+    showRandomQuestion();
 }
 
-// Function to update the progress bar
 function updateProgress() {
     const progressDisplay = document.getElementById("progress-display");
     const progressPercentage = (answeredQuestions / totalQuestions) * 100;
     progressDisplay.style.width = `${progressPercentage}%`;
 }
 
-// Function to display the results at the end of the quiz
 function displayResults() {
     finished = true;
 
@@ -298,7 +286,6 @@ function displayResults() {
         message = messages[3][Math.floor(Math.random() * 6)];
     }
 
-    // Display the results
     document.getElementById("question").innerHTML = "Quiz Complete!";
     document.getElementById(
         "quiz-content"
@@ -308,7 +295,6 @@ function displayResults() {
         totalQuestions > 1 ? "s" : ""
     } correctly, receiving a score of ${score}%. ${message}<br><br>`;
 
-    // Create an overview of the answered questions
     const overview = document.createElement("div");
 
     userAnswers.forEach((answer) => {
@@ -330,18 +316,19 @@ function displayResults() {
 
     document.getElementById("quiz-content").appendChild(overview);
     document.getElementById("submit-button").innerText = "Retry";
+    document.getElementById("submit-button").addEventListener("click", function() {
+        window.location.href = "/practice.html";
+    });
 
     const progressDisplay = document.getElementById("progress-display");
     progressDisplay.style.width = "100%";
 }
 
-// Attach event listener to the submit button
 document.querySelector(".submit").addEventListener("click", (event) => {
     event.preventDefault();
     handleSubmit();
 });
 
-// Attach event listener to inputs
 document.addEventListener("keyup", (event) => {
     if (event.key === "Enter") {
         document
@@ -369,5 +356,4 @@ document.addEventListener("keyup", (event) => {
     event.preventDefault();
 });
 
-// Load questions on page load
 loadQuestions();

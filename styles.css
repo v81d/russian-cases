@@ -101,20 +101,6 @@ body {
     }
 }
 
-/* Swup transition styling */
-.transition-fade {
-    transform: translateX(0);
-    transition: 500ms;
-}
-
-html.is-animating .transition-fade {
-    transform: translateX(calc(100vw));
-}
-
-html.is-leaving .transition-fade {
-    transform: translateX(calc(-100vw));
-}
-
 /* Headings styling */
 h1 {
     font-size: 2em;

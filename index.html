@@ -14,7 +14,7 @@
     <meta property="og:type" content="article">
     <meta property="og:image" content="https://russiancases.sharestaging.com/banner.jpg">
     <meta property="og:image:alt" content="The Six Russian Grammatical Cases">
-    <meta property="og:url" content="https://russiancases.sharestaging.com/">
+    <meta property="og:url" content="https://russiancases.sharestaging.com/index.html">
     <meta property="og:locale" content="en_US">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://russiancases.sharestaging.com/banner.jpg">
@@ -32,16 +32,16 @@
                 in the Russian language. To learn more about the nominative, genitive, accusative, prepositional,
                 instrumental, or dative case, click on any of the buttons below.</p>
             <nav class="button-container">
-                <a href="/nominative" class="button">Nominative Case</a>
-                <a href="/genitive" class="button">Genitive Case</a>
-                <a href="/accusative" class="button">Accusative Case</a>
-                <a href="/prepositional" class="button">Prepositional Case</a>
-                <a href="/instrumental" class="button">Instrumental Case</a>
-                <a href="/dative" class="button">Dative Case</a>
+                <a href="/nominative.html" class="button">Nominative Case</a>
+                <a href="/genitive.html" class="button">Genitive Case</a>
+                <a href="/accusative.html" class="button">Accusative Case</a>
+                <a href="/prepositional.html" class="button">Prepositional Case</a>
+                <a href="/instrumental.html" class="button">Instrumental Case</a>
+                <a href="/dative.html" class="button">Dative Case</a>
             </nav>
             <hr style="margin-top: 25px; margin-bottom: 0;">
-            <a href="/practice" class="button extended" style="margin-top: 25px;">Practice the Cases</a>
-            <a href="/alphabet" class="button extended" style="margin-top: 15px;">Learn the Alphabet</a>
+            <a href="/practice.html" class="button extended" style="margin-top: 25px;">Practice the Cases</a>
+            <a href="/alphabet.html" class="button extended" style="margin-top: 15px;">Learn the Alphabet</a>
         </header>
 
         <main class="overview">
@@ -71,29 +71,30 @@
                     language. It includes noun declensions, verb conjugations, cases, and more, creating a rich means of
                     communication. Whether you're just starting or advancing, understanding it opens doors to deeper
                     engagement with Russian culture and literature.</p>
-                <a href="/grammar" class="button extended">Learn the Grammar</a>
+                <a href="/grammar.html" class="button extended">Learn the Grammar</a>
             </section>
 
             <section>
                 <div id="disqus_thread"></div>
-                <script style="display: none;">
+                <script>
                     var disqus_config = function () {
-                        this.page.url = "https://russiancases.sharestaging.com/";
-                        this.page.identifier = "Russian Cases - Русские Падежи";
+                    this.page.url = "https://russian-cases.vercel.app";
+                    this.page.identifier = "Russian Cases";
                     };
-
-                    (function () {
-                        var d = document, s = d.createElement("script");
-                        s.src = "https://russiancases.disqus.com/embed.js";
-                        s.setAttribute("data-timestamp", +new Date());
-                        (d.head || d.body).appendChild(s);
+                    (function() { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://russian-cases.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
                     })();
                 </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments.</a></noscript>
             </section>
         </main>
     </div>
 
     <script src="/script.js"></script>
+    <script id="dsq-count-scr" src="//russian-cases.disqus.com/count.js" async></script>
 </body>
 
 </html>
