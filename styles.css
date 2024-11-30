@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 
-/* Reset basic elements */
 html,
 body {
     overflow-x: hidden;
@@ -33,7 +32,6 @@ a {
     display: none;
 }
 
-/* General styling */
 body {
     font-family: "Open Sans", sans-serif;
     line-height: 1.6;
@@ -46,7 +44,6 @@ body {
         padding: 0 !important;
     }
 
-    /* Container styling */
     .container {
         background: #fff;
         padding: 40px;
@@ -54,7 +51,6 @@ body {
 }
 
 @media screen and (min-width: 951px) {
-    /* Background styling */
     body::before {
         content: "";
         position: fixed;
@@ -70,7 +66,6 @@ body {
         z-index: -1000;
     }
 
-    /* Gradient overlay */
     body::after {
         content: "";
         position: fixed;
@@ -89,7 +84,6 @@ body {
         z-index: -999;
     }
 
-    /* Container styling */
     .container {
         max-width: 60%;
         margin: auto;
@@ -101,7 +95,6 @@ body {
     }
 }
 
-/* Headings styling */
 h1 {
     font-size: 2em;
     padding-bottom: 20px;
@@ -121,12 +114,10 @@ h3 {
     padding-bottom: 10px;
 }
 
-/* Paragraph styling */
 p {
     margin-bottom: 10px;
 }
 
-/* List styling */
 ul,
 ol {
     margin-bottom: 10px;
@@ -142,7 +133,6 @@ li {
     margin-bottom: 15px;
 }
 
-/* Link styling */
 a {
     -webkit-touch-callout: none;
     -webkit-user-drag: none;
@@ -161,14 +151,12 @@ a {
     text-decoration: none;
 }
 
-/* Button styling */
 .button-container {
     display: grid;
     gap: 15px;
     margin-top: 20px;
 }
 
-/* Default to 2x3 grid layout for regular-sized screens */
 @media (min-width: 1060px) {
     .button-container {
         grid-template-columns: repeat(3, 1fr);
@@ -176,7 +164,6 @@ a {
     }
 }
 
-/* Switch to 3x2 grid layout for smaller screens */
 @media (min-width: 480px) and (max-width: 1060px) {
     .button-container {
         grid-template-columns: repeat(2, 1fr);
@@ -184,7 +171,6 @@ a {
     }
 }
 
-/* Switch to 6x1 grid layout for very small screens */
 @media (max-width: 479px) {
     .button-container {
         grid-template-columns: 1fr;
@@ -232,7 +218,6 @@ button:active {
     width: 100%;
 }
 
-/* Overview section styling */
 .overview {
     text-align: left;
 }
@@ -252,32 +237,29 @@ button:active {
     margin-top: 50px;
 }
 
-/* General styling for collapsible elements */
 .collapsible {
     cursor: pointer;
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* Edge */
-    user-select: none; /* Standard syntax */
-    position: relative; /* For positioning of the sliding line */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
     transition: line-height 300ms ease;
 }
 
-/* Hover state for collapsible */
 .collapsible:hover {
     line-height: 1.9;
 }
 
-/* Icon before the collapsible text */
 .collapsible::before {
-    content: "\002B"; /* Unicode for plus (expand) */
+    content: "\002B";
     font-weight: normal;
     color: #999;
     position: relative;
-    margin-right: 0.7em; /* Adjust positioning */
+    margin-right: 0.7em;
     transform: rotate(0);
     background-color: transparent;
-    border-radius: 50%; /* Ensure it is a circle */
+    border-radius: 50%;
     width: 1em;
     height: 1em;
     display: inline-flex;
@@ -288,9 +270,8 @@ button:active {
     transition-behavior: allow-discrete;
 }
 
-/* Hover state for icon */
 .collapsible:hover::before {
-    background-color: rgba(0, 0, 0, 0.1); /* Light circle background on hover */
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .collapsible:active::before {
@@ -299,62 +280,56 @@ button:active {
         0,
         0,
         0.15
-    ); /* Slightly darker circle background on active */
+    );
 }
 
 .collapsible.default::before {
-    content: "\002B"; /* Unicode for plus (expand) */
+    content: "\002B";
 }
 
 .collapsible:not(.default)::before {
-    content: "\2212"; /* Unicode for minus (collapse) */
+    content: "\2212";
 }
 
-/* Signs for default collapsibles */
 .collapsible.default.active::before {
-    content: "\2212"; /* Unicode for minus (collapse) */
-    transform: rotate(180deg); /* Flip minus sign */
+    content: "\2212";
+    transform: rotate(180deg);
 }
 
-/* Signs for non-default collapsibles */
 .collapsible:not(.default).active::before {
-    content: "\002B"; /* Unicode for plus (expand) */
-    transform: rotate(-180deg); /* Flip minus sign */
+    content: "\002B";
+    transform: rotate(-180deg);
 }
 
-/* Style for elements directly following the collapsible */
 section > .collapsible + * {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
     margin: 0;
-    display: none; /* Ensure the element is hidden initially */
+    display: none;
     transition: all 400ms ease;
 }
 
-/* Expanded state styles for elements directly following the collapsible */
 section > .collapsible.active + * {
-    display: block; /* Ensure the element is visible */
-    max-height: 9999px; /* Large value to accommodate content */
+    display: block;
+    max-height: 9999px;
     opacity: 1;
     margin: revert;
     transition: all 400ms ease;
 }
 
-/* Style for all following siblings after the direct next sibling */
 section > .collapsible + * ~ * {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
     margin: 0;
-    display: none; /* Ensure the element is hidden initially */
+    display: none;
     transition: all 400ms ease;
 }
 
-/* Expanded state styles for all following siblings */
 section > .collapsible.active + * ~ * {
-    display: block; /* Ensure the element is visible */
-    max-height: 9999px; /* Large value to accommodate content */
+    display: block;
+    max-height: 9999px;
     opacity: 1;
     margin: revert;
     transition: all 400ms ease;

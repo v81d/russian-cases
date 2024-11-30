@@ -52,13 +52,10 @@
     margin-bottom: 15px;
 }
 
-/* Hide the default radio buttons */
 input[type="radio"] {
     display: none;
-    /* Hide original radio buttons */
 }
 
-/* Style for the custom radio button */
 .quiz-radio-button,
 .onboarding-radio-button {
     display: inline-block;
@@ -68,44 +65,33 @@ input[type="radio"] {
     font-size: 1em;
     color: slategray;
     border: 2px solid #dde7eb;
-    /* Border for button */
     border-radius: 12px;
-    /* Rounded corners */
     cursor: pointer;
-    /* Pointer cursor for interaction */
     box-shadow: 0 0 0 rgba(0, 0, 0, 0), rgb(221, 231, 235) 0 -2px 0 inset;
     transition: all 400ms ease;
-    /* Transition for hover effects */
 }
 
-/* Change background color when the radio is selected */
 input[type="radio"]:checked+.quiz-radio-button,
 input[type="radio"]:checked+.onboarding-radio-button {
     background-color: #dde7eb;
-    /* Color when selected */
     box-shadow: none;
 }
 
-/* Hover state effect */
 .quiz-radio-button:hover,
 .onboarding-radio-button:hover {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05),
         rgb(221, 231, 235) 0 -2px 0 inset;
     transform: translateY(-2px);
-    /* Slightly raise the button */
     scale: 1.01;
 }
 
-/* Active state effect */
 .quiz-radio-button:active,
 .onboarding-radio-button:active {
     transform: none;
-    /* Slightly lower the button */
     box-shadow: none;
     scale: 1;
 }
 
-/* Focus state outline */
 .quiz-radio-button:focus,
 .onboarding-radio-button:focus {
     outline: none;
@@ -143,7 +129,6 @@ input[type="radio"]:checked+.onboarding-radio-button {
     background-color: transparent;
 }
 
-/* WebKit and Blink */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
