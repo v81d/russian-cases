@@ -579,5 +579,749 @@
         ],
         "correct": 1,
         "correctAnswer": "False"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "Which case is used for \"дом\" in the phrase \"Я иду в дом\"?",
+        "options": [
+            "Nominative",
+            "Accusative",
+            "Genitive",
+            "Dative"
+        ],
+        "correct": 1,
+        "correctAnswer": "Accusative"
+    },
+    {
+        "type": "true-false",
+        "question": "The phrase \"Я работаю с компьютером\" (I work with a computer) uses the instrumental case for \"компьютер.\"",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 0,
+        "correctAnswer": "True"
+    },
+    {
+        "type": "open-ended",
+        "question": "What's the genitive plural form of \"студент\" (student) in the phrase \"a group of students\"?",
+        "correctAnswer": "студентов"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "Which form of \"учитель\" (teacher) is used in the phrase \"Я слушаю учителя\"?",
+        "options": [
+            "учитель",
+            "учителя",
+            "учителю",
+            "учителем"
+        ],
+        "correct": 1,
+        "correctAnswer": "учителя"
+    },
+    {
+        "type": "true-false",
+        "question": "The phrase \"Я пишу письмо другу\" (I am writing a letter to a friend) uses the dative case for \"друг.\"",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 0,
+        "correctAnswer": "True"
+    },
+    {
+        "type": "open-ended",
+        "question": "What's the instrumental singular form of \"книга\" (book) in the phrase \"I am reading with a book\"?",
+        "correctAnswer": "книгой"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "Which form of \"студент\" (student) is used in the phrase \"Я вижу студента\"?",
+        "options": [
+            "студент",
+            "студента",
+            "студенту",
+            "студентом"
+        ],
+        "correct": 1,
+        "correctAnswer": "студента"
+    },
+    {
+        "type": "true-false",
+        "question": "The phrase \"Я горжусь своим братом\" (I am proud of my brother) uses the instrumental case for \"брат.\"",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 0,
+        "correctAnswer": "True"
+    },
+    {
+        "type": "open-ended",
+        "question": "What's the prepositional singular form of \"улица\" (street) in the phrase \"We are talking about the street\"?",
+        "correctAnswer": "улице"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "Which form of \"друг\" (friend) is used in the phrase \"Я иду к другу\"?",
+        "options": [
+            "друг",
+            "друга",
+            "другу",
+            "другом"
+        ],
+        "correct": 2,
+        "correctAnswer": "другу"
+    },
+    {
+        "type": "true-false",
+        "question": "The phrase \"Я читаю книгу\" (I am reading a book) uses the accusative case for \"книга.\"",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 0,
+        "correctAnswer": "True"
+    },
+    {
+        "type": "open-ended",
+        "question": "What's the genitive singular form of \"дерево\" (tree) in the phrase \"a branch of a tree\"?",
+        "correctAnswer": "дерева"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "Which form of \"мама\" (mother) is used in the phrase \"Я говорю с мамой\"?",
+        "options": [
+            "мама",
+            "мамы",
+            "маме",
+            "мамой"
+        ],
+        "correct": 3,
+        "correctAnswer": "мамой"
+    },
+    {
+        "type": "true-false",
+        "question": "The phrase \"Я иду в школу\" (I am going to school) uses the accusative case for \"школа.\"",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 0,
+        "correctAnswer": "True"
+    },
+    {
+        "type": "open-ended",
+        "question": "What's the dative singular form of \"учитель\" (teacher) in the phrase \"I am giving a book to the teacher\"?",
+        "correctAnswer": "учителю"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "Which form of \"кошка\" (cat) is used in the phrase \"Я играю с кошкой\"?",
+        "options": [
+            "кошка",
+            "кошки",
+            "кошке",
+            "кошкой"
+        ],
+        "correct": 3,
+        "correctAnswer": "кошкой"
+    },
+    {
+        "type": "true-false",
+        "question": "The phrase \"Я вижу машину\" (I see a car) uses the accusative case for \"машина.\"",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 0,
+        "correctAnswer": "True"
+    },
+    {
+        "type": "open-ended",
+        "question": "What's the instrumental singular form of \"стол\" (table) in the phrase \"I am writing on the table\"?",
+        "correctAnswer": "столом"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "Which form of \"девочка\" (girl) is used in the phrase \"Я говорю с девочкой\"?",
+        "options": [
+            "девочка",
+            "девочки",
+            "девочке",
+            "девочкой"
+        ],
+        "correct": 3,
+        "correctAnswer": "девочкой"
+    },
+    {
+        "type": "true-false",
+        "question": "The phrase \"Я иду к врачу\" (I am going to the doctor) uses the dative case for \"врач.\"",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 0,
+        "correctAnswer": "True"
+    },
+    {
+        "type": "open-ended",
+        "question": "What's the genitive singular form of \"собака\" (dog) in the phrase \"a leash of a dog\"?",
+        "correctAnswer": "собаки"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "Which form of \"ученик\" (pupil) is used in the phrase \"Я вижу ученика\"?",
+        "options": [
+            "ученик",
+            "ученика",
+            "ученику",
+            "учеником"
+        ],
+        "correct": 1,
+        "correctAnswer": "ученика"
+    },
+    {
+        "type": "true-false",
+        "question": "The phrase \"Я горжусь своей работой\" (I am proud of my work) uses the instrumental case for \"работа.\"",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 0,
+        "correctAnswer": "True"
+    },
+    {
+        "type": "open-ended",
+        "question": "What's the prepositional singular form of \"река\" (river) in the phrase \"We are talking about the river\"?",
+        "correctAnswer": "реке"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "In a Russian fairy tale, the hero says, \"Я помог бабушке перейти дорогу.\" What case is \"бабушке\" in this sentence?",
+        "options": [
+            "Nominative",
+            "Accusative",
+            "Dative",
+            "Instrumental"
+        ],
+        "correct": 2,
+        "correctAnswer": "Dative"
+    },
+    {
+        "type": "true-false",
+        "question": "In Russian, the prepositional case is used after the preposition \"о\" (about) to indicate the topic of speech.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 0,
+        "correctAnswer": "True"
+    },
+    {
+        "type": "open-ended",
+        "question": "What is the genitive plural form of \"человек\" (person) in the phrase \"voices of people\"?",
+        "correctAnswer": "людей"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "You're reading a Russian mystery novel that says, \"Письмо написано неизвестным.\" What case is \"неизвестным\" (by an unknown person) in?",
+        "options": [
+            "Nominative",
+            "Accusative",
+            "Instrumental",
+            "Dative"
+        ],
+        "correct": 2,
+        "correctAnswer": "Instrumental"
+    },
+    {
+        "type": "true-false",
+        "question": "The accusative case is used for the direct object of a sentence in Russian.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 0,
+        "correctAnswer": "True"
+    },
+    {
+        "type": "open-ended",
+        "question": "Provide the dative singular form of \"мать\" (mother) in the phrase \"I am giving flowers to my mother.\"",
+        "correctAnswer": "матери"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "In a Russian adventure story, the character says, \"Мы путешествуем по миру.\" What case is \"мир\" (world) in?",
+        "options": [
+            "Nominative",
+            "Dative",
+            "Accusative",
+            "Prepositional"
+        ],
+        "correct": 1,
+        "correctAnswer": "Dative"
+    },
+    {
+        "type": "true-false",
+        "question": "The genitive case can express absence or lack of something in Russian.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 0,
+        "correctAnswer": "True"
+    },
+    {
+        "type": "open-ended",
+        "question": "What is the instrumental singular form of \"песня\" (song) in the phrase \"She is known for her song\"?",
+        "correctAnswer": "песней"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "You're reading a letter that starts with \"Дорогой друг,\" what case is \"друг\" (friend) in this greeting?",
+        "options": [
+            "Nominative",
+            "Vocative (Direct Address)",
+            "Dative",
+            "Accusative"
+        ],
+        "correct": 1,
+        "correctAnswer": "Vocative (Direct Address)"
+    },
+    {
+        "type": "true-false",
+        "question": "In the modern Russian language, the vocative case (direct address) is commonly used in everyday speech.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 1,
+        "correctAnswer": "False"
+    },
+    {
+        "type": "open-ended",
+        "question": "Translate \"cat\" into the prepositional singular form in the phrase \"about the cat.\"",
+        "correctAnswer": "коте"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "In a newspaper, you read \"Президент встретился с министром.\" What case is \"министр\" (minister) in?",
+        "options": [
+            "Nominative",
+            "Accusative",
+            "Instrumental",
+            "Genitive"
+        ],
+        "correct": 2,
+        "correctAnswer": "Instrumental"
+    },
+    {
+        "type": "true-false",
+        "question": "The prepositional case is used exclusively with prepositions in Russian.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 0,
+        "correctAnswer": "True"
+    },
+    {
+        "type": "open-ended",
+        "question": "Provide the genitive plural form of \"дочь\" (daughter) in the phrase \"stories of daughters.\"",
+        "correctAnswer": "дочерей"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "In a travel diary, you find the sentence \"Мы восхищаемся природой.\" What case is \"природа\" (nature) in?",
+        "options": [
+            "Nominative",
+            "Accusative",
+            "Dative",
+            "Instrumental"
+        ],
+        "correct": 3,
+        "correctAnswer": "Instrumental"
+    },
+    {
+        "type": "true-false",
+        "question": "The dative case can be used to express the indirect object in a sentence.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 0,
+        "correctAnswer": "True"
+    },
+    {
+        "type": "open-ended",
+        "question": "What's the accusative singular form of \"мама\" (mom) in the phrase \"I love my mom\"?",
+        "correctAnswer": "маму"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "You're watching a Russian film and hear \"Он думает о будущем.\" What case is \"будущее\" (future) in?",
+        "options": [
+            "Nominative",
+            "Prepositional",
+            "Accusative",
+            "Genitive"
+        ],
+        "correct": 1,
+        "correctAnswer": "Prepositional"
+    },
+    {
+        "type": "true-false",
+        "question": "The instrumental case can indicate the means by which an action is performed.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 0,
+        "correctAnswer": "True"
+    },
+    {
+        "type": "open-ended",
+        "question": "Translate \"friend\" into the genitive plural form in the phrase \"memories of friends.\"",
+        "correctAnswer": "друзей"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "In a song, the lyrics say \"Я лечу над городом.\" What case is \"город\" (city) in?",
+        "options": [
+            "Nominative",
+            "Accusative",
+            "Instrumental",
+            "Dative"
+        ],
+        "correct": 2,
+        "correctAnswer": "Instrumental"
+    },
+    {
+        "type": "true-false",
+        "question": "In Russian, the genitive case is used after the number two.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 1,
+        "correctAnswer": "False"
+    },
+    {
+        "type": "open-ended",
+        "question": "What is the dative singular form of \"время\" (time) in the phrase \"I have no time for this\"?",
+        "correctAnswer": "времени"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "You're reading a recipe that says \"Смешайте ингредиенты ложкой.\" What case is \"ложка\" (spoon) in?",
+        "options": [
+            "Nominative",
+            "Instrumental",
+            "Accusative",
+            "Genitive"
+        ],
+        "correct": 1,
+        "correctAnswer": "Instrumental"
+    },
+    {
+        "type": "true-false",
+        "question": "The accusative case is always different from the nominative case in Russian.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 1,
+        "correctAnswer": "False"
+    },
+    {
+        "type": "open-ended",
+        "question": "Provide the prepositional singular form of \"город\" (city) used in \"I live in the city.\"",
+        "correctAnswer": "городе"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "In a diary entry, someone writes \"Я скучаю по тебе.\" What case is \"ты\" (you) in?",
+        "options": [
+            "Nominative",
+            "Accusative",
+            "Dative",
+            "Prepositional"
+        ],
+        "correct": 2,
+        "correctAnswer": "Dative"
+    },
+    {
+        "type": "true-false",
+        "question": "After the preposition \"с\" (with), Russian nouns are always in the genitive case.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 1,
+        "correctAnswer": "False"
+    },
+    {
+        "type": "open-ended",
+        "question": "What's the instrumental singular form of \"дом\" (house) in the expression \"under the house\"?",
+        "correctAnswer": "домом"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "You read the sentence \"Она интересуется музыкой.\" What case is \"музыка\" (music) in?",
+        "options": [
+            "Instrumental",
+            "Prepositional",
+            "Accusative",
+            "Genitive"
+        ],
+        "correct": 0,
+        "correctAnswer": "Instrumental"
+    },
+    {
+        "type": "true-false",
+        "question": "The dative case is used after the verb \"помогать\" (to help) in Russian.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 0,
+        "correctAnswer": "True"
+    },
+    {
+        "type": "open-ended",
+        "question": "Translate \"night\" into the prepositional singular form in \"We are talking about the night.\"",
+        "correctAnswer": "ночи"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "In a news article, you read \"Он присоединился к команде.\" What case is \"команда\" (team) in?",
+        "options": [
+            "Dative",
+            "Accusative",
+            "Instrumental",
+            "Prepositional"
+        ],
+        "correct": 0,
+        "correctAnswer": "Dative"
+    },
+    {
+        "type": "true-false",
+        "question": "The prepositional case is sometimes called the locative case in Russian.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 0,
+        "correctAnswer": "True"
+    },
+    {
+        "type": "open-ended",
+        "question": "Provide the genitive singular form of \"сердце\" (heart) in the phrase \"voice of the heart.\"",
+        "correctAnswer": "сердца"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "In a story, the narrator says \"Я наслаждаюсь тишиной.\" What case is \"тишина\" (silence) in?",
+        "options": [
+            "Accusative",
+            "Genitive",
+            "Dative",
+            "Instrumental"
+        ],
+        "correct": 3,
+        "correctAnswer": "Instrumental"
+    },
+    {
+        "type": "true-false",
+        "question": "The instrumental case can be used to indicate the time when something occurs.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 1,
+        "correctAnswer": "False"
+    },
+    {
+        "type": "open-ended",
+        "question": "What's the accusative plural form of \"звезда\" (star) in the phrase \"I see the stars\"?",
+        "correctAnswer": "звёзды"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "You're listening to a lecture where the speaker says \"Давайте перейдем к следующему вопросу.\" What case is \"вопрос\" (question) in?",
+        "options": [
+            "Nominative",
+            "Dative",
+            "Accusative",
+            "Genitive"
+        ],
+        "correct": 1,
+        "correctAnswer": "Dative"
+    },
+    {
+        "type": "true-false",
+        "question": "In Russian, the genitive case is used after the word \"нет\" (no/not).",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 0,
+        "correctAnswer": "True"
+    },
+    {
+        "type": "open-ended",
+        "question": "Provide the prepositional singular form of \"лес\" (forest) used in \"They are in the forest.\"",
+        "correctAnswer": "лесу"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "In a novel, the character says \"Я горжусь своим сыном.\" What case is \"сын\" (son) in?",
+        "options": [
+            "Accusative",
+            "Genitive",
+            "Instrumental",
+            "Dative"
+        ],
+        "correct": 2,
+        "correctAnswer": "Instrumental"
+    },
+    {
+        "type": "true-false",
+        "question": "The accusative case is used after the preposition \"за\" (behind) when indicating motion toward something.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 0,
+        "correctAnswer": "True"
+    },
+    {
+        "type": "open-ended",
+        "question": "What's the genitive singular form of \"море\" (sea) in the phrase \"depth of the sea\"?",
+        "correctAnswer": "моря"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "You come across the sentence \"Он руководит компанией.\" What case is \"компания\" (company) in?",
+        "options": [
+            "Nominative",
+            "Accusative",
+            "Instrumental",
+            "Genitive"
+        ],
+        "correct": 2,
+        "correctAnswer": "Instrumental"
+    },
+    {
+        "type": "true-false",
+        "question": "The prepositional case is used to express location in Russian.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 0,
+        "correctAnswer": "True"
+    },
+    {
+        "type": "open-ended",
+        "question": "Provide the dative singular form of \"дядя\" (uncle) in the phrase \"I am writing to my uncle.\"",
+        "correctAnswer": "дяде"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "In a story, the narrator says \"Я живу в доме.\" What case is \"дом\" (house) in?",
+        "options": [
+            "Nominative",
+            "Accusative",
+            "Instrumental",
+            "Prepositional"
+        ],
+        "correct": 3,
+        "correctAnswer": "Prepositional"
+    },
+    {
+        "type": "true-false",
+        "question": "The dative case is used after the verb \"нравиться\" (to like) in Russian.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 0,
+        "correctAnswer": "True"
+    },
+    {
+        "type": "open-ended",
+        "question": "Translate \"book\" into the instrumental singular form in the phrase \"I am reading with a book.\"",
+        "correctAnswer": "книгой"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "You're reading a novel where the character says \"Я говорю с дочерью.\" What case is \"дочь\" (daughter) in?",
+        "options": [
+            "Nominative",
+            "Accusative",
+            "Dative",
+            "Instrumental"
+        ],
+        "correct": 3,
+        "correctAnswer": "Instrumental"
+    },
+    {
+        "type": "true-false",
+        "question": "The instrumental case is used after the verb \"быть\" (to be) in Russian.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 1,
+        "correctAnswer": "False"
+    },
+    {
+        "type": "open-ended",
+        "question": "What's the accusative plural form of \"дом\" (house) in the phrase \"I see the houses\"?",
+        "correctAnswer": "дома"
+    },
+    {
+        "type": "multiple-choice",
+        "question": "In a fairy tale, the character says \"Я спас девушку от дракона.\" What case is \"девушка\"",
+        "options": [
+            "Nominative",
+            "Accusative",
+            "Instrumental",
+            "Genitive"
+        ],
+        "correct": 1,
+        "correctAnswer": "Accusative"
+    },
+    {
+        "type": "true-false",
+        "question": "The accusative case is used after the preposition \"через\" (through) to indicate motion across something.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": 0,
+        "correctAnswer": "True"
+    },
+    {
+        "type": "open-ended",
+        "question": "In the line \"Я вас любил: любовь еще, быть может,\" from \"Евгений Онегин\" by Alexander Pushkin, which case is the word \"любовь\" in?",
+        "correctAnswer": "Nominative"
+    },
+    {
+        "type": "open-ended",
+        "question": "In the iconic scene from the film \"Брат\" (1997) by Aleksei Balabanov, when the phrase \"Ты кто, человек или дерево?\" is spoken, what case is the word \"человек\"?",
+        "correctAnswer": "Nominative"
+    },
+    {
+        "type": "open-ended",
+        "question": "From \"Руслан и Людмила\" by Alexander Pushkin, the phrase \"Сказка ложь, да в ней намек\" contains which case for the word \"сказка\"?",
+        "correctAnswer": "Nominative"
+    },
+    {
+        "type": "open-ended",
+        "question": "In Fyodor Dostoevsky's \"Преступление и наказание,\" how is the word \"друга\" used in the phrase \"Это книга моего друга\"? What case is it in?",
+        "correctAnswer": "Genitive"
     }
 ]
