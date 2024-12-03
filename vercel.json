@@ -1,3 +1,7 @@
 {
+    "name": "Russian Cases - Русские Падежи",
+    "routes": [
+        { "src": "/", "dest": "/index.html" }
+    ],
     "cleanUrls": true
 }
