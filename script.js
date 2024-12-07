@@ -108,11 +108,10 @@ function setFooter() {
     footerText.style.marginBottom = "0";
     footerText.style.color = "#999";
     footerText.style.fontSize = "0.7rem";
-    footerText.innerHTML = 'Made with ❤︎ by <a href="https://github.com/v81d" style="color: inherit; text-decoration: underline dotted;">v81d</a>. Thank you for visiting Russian Cases!';
+    footerText.innerHTML = 'Made by <a href="https://github.com/v81d" style="color: inherit; text-decoration: underline dotted;">v81d</a>. Thank you for visiting Russian Cases!';
 
     const container = document.querySelector(".container");
     container.appendChild(footer);
-    footer.appendChild(footerText);
 }
 
 window.addEventListener("load", function () {
