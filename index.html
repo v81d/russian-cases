@@ -14,19 +14,16 @@
     <meta property="og:site_name" content="Russian Cases - Русские Падежи" />
     <meta property="og:title" content="Russian Cases - Русские Падежи" />
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://russian-cases.vercel.app/logo.png">
-    <meta property="og:image:alt" content="The Six Russian Grammatical Cases">
     <meta property="og:locale" content="en_US">
     <meta property="og:url" content="https://russian-cases.vercel.app" />
     <meta property="twitter:title" content="Russian Cases - Русские Падежи">
     <meta property="twitter:description"
         content="Welcome to Russian Cases! Here, you will find comprehensive explanations of the six Russian cases: nominative, genitive, dative, accusative, instrumental, and prepositional.">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://russian-cases.vercel.app/logo.png">
     <meta name="robots" content="index, follow">
     <title>Russian Cases - Русские Падежи</title>
-    <link rel="stylesheet" href="/styles.css">
-    <link rel="shortcut icon" href="/logo.png" type="image/png">
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <link rel="shortcut icon" href="./assets/media/icon.png" type="image/png">
 </head>
 
 <body>
@@ -45,64 +42,42 @@
                 <a href="/dative.html" class="button">Dative Case</a>
             </nav>
             <hr style="margin-top: 25px; margin-bottom: 0;">
-            <a href="/practice.html" class="button extended" style="margin-top: 25px;">Practice the Cases</a>
-            <a href="/alphabet.html" class="button extended" style="margin-top: 15px;">Learn the Alphabet</a>
+            <nav class="button-container">
+                <a href="/practice.html" class="button extended">Practice the Cases</a>
+                <a href="/alphabet.html" class="button extended">Learn the Alphabet</a>
+                <a href="/grammar.html" class="button extended">Learn the Grammar</a>
+            </nav>
         </header>
 
-        <main class="overview">
-            <section>
-                <h2 class="collapsible">What are Grammatical Cases?</h2>
-                <p>In the Russian language, grammatical cases are used to indicate the role of a noun, pronoun, or
-                    adjective within a sentence. Each case provides different information about the relationship of
-                    words in a sentence.</p>
-                <ul>
-                    <li><strong>Nominative Case:</strong> The subject of the sentence, answering "who?" or "what?"</li>
-                    <li><strong>Genitive Case:</strong> Often used to show possession, origin, or to describe something,
-                        answering "of whom?" or "of what?"</li>
-                    <li><strong>Accusative Case:</strong> The direct object of the sentence, receiving the action,
-                        answering "whom?" or "what?"</li>
-                    <li><strong>Prepositional Case:</strong> Used after certain prepositions, indicating location or the
-                        topic of discussion, answering "about whom?" or "about what?"</li>
-                    <li><strong>Instrumental Case:</strong> Used to indicate the means by which an action is performed
-                        or with whom something is done, answering "with whom?" or "with what?"</li>
-                    <li><strong>Dative Case:</strong> The indirect object of the sentence, typically answering "to
-                        whom?" or "for whom?"</li>
-                </ul>
-            </section>
+        <section style="margin-top: -30px;">
+            <h2 class="collapsible">What are Grammatical Cases?</h2>
+            <p>In the Russian language, grammatical cases are used to indicate the role of a noun, pronoun, or
+                adjective within a sentence. Each case provides different information about the relationship of
+                words in a sentence.</p>
+            <ul>
+                <li><strong>Nominative Case:</strong> The subject of the sentence, answering "who?" or "what?"</li>
+                <li><strong>Genitive Case:</strong> Often used to show possession, origin, or to describe something,
+                    answering "of whom?" or "of what?"</li>
+                <li><strong>Accusative Case:</strong> The direct object of the sentence, receiving the action,
+                    answering "whom?" or "what?"</li>
+                <li><strong>Prepositional Case:</strong> Used after certain prepositions, indicating location or the
+                    topic of discussion, answering "about whom?" or "about what?"</li>
+                <li><strong>Instrumental Case:</strong> Used to indicate the means by which an action is performed
+                    or with whom something is done, answering "with whom?" or "with what?"</li>
+                <li><strong>Dative Case:</strong> The indirect object of the sentence, typically answering "to
+                    whom?" or "for whom?"</li>
+            </ul>
+        </section>
 
-            <section>
-                <h2 class="collapsible">Introduction to Russian Grammar!</h2>
-                <p style="margin-bottom: 20px;">Russian grammar is a fascinating system that forms the backbone of the
-                    language. It includes noun declensions, verb conjugations, cases, and more, creating a rich means of
-                    communication. Whether you're just starting or advancing, understanding it opens doors to deeper
-                    engagement with Russian culture and literature.</p>
-                <a href="/grammar.html" class="button extended">Learn the Grammar</a>
-            </section>
-
-            <section style="margin-top: 20px;">
-                <script src="https://giscus.app/client.js"
-                        data-repo="v81d/russian-cases"
-                        data-repo-id="R_kgDONXAA0A"
-                        data-category="General"
-                        data-category-id="DIC_kwDONXAA0M4Ck34M"
-                        data-mapping="og:title"
-                        data-strict="1"
-                        data-reactions-enabled="1"
-                        data-emit-metadata="1"
-                        data-input-position="top"
-                        data-theme="light_high_contrast"
-                        data-lang="en"
-                        data-loading="lazy"
-                        crossorigin="anonymous"
-                        async>
+        <section style="margin-top: 20px;">
+            <script src="https://utteranc.es/client.js" repo="v81d/russian-cases" issue-term="title"
+                theme="github-light" crossorigin="anonymous" async>
                 </script>
-                <noscript>Please enable JavaScript to view the comments.</noscript>
-            </section>
-        </main>
+            <noscript>Please enable JavaScript to view the comments.</noscript>
+        </section>
     </div>
 
-    <script src="/script.js"></script>
-    <script id="dsq-count-scr" src="//russian-cases.disqus.com/count.js" async></script>
+    <script src="./assets/scripts/main.js"></script>
 </body>
 
 </html>
