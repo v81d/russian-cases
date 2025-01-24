@@ -73,11 +73,9 @@ body {
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(
-            to bottom,
-            rgba(255, 255, 255, 0.7),
-            rgba(255, 255, 255, 0.1)
-        );
+        background: linear-gradient(to bottom,
+                rgba(255, 255, 255, 0.7),
+                rgba(255, 255, 255, 0.1));
         pointer-events: none;
         backdrop-filter: blur(8px);
         -webkit-backdrop-filter: blur(8px);
@@ -233,22 +231,15 @@ button:active {
     line-height: 1.6;
 }
 
-#disqus_thread {
-    margin-top: 50px;
-}
-
 .collapsible {
     cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
     position: relative;
-    transition: line-height 300ms ease;
+    display: inline-block;
+    transition: letter-spacing 600ms ease;
 }
 
 .collapsible:hover {
-    line-height: 1.9;
+    letter-spacing: 1px;
 }
 
 .collapsible::before {
@@ -275,12 +266,10 @@ button:active {
 }
 
 .collapsible:active::before {
-    background-color: rgba(
-        0,
-        0,
-        0,
-        0.15
-    );
+    background-color: rgba(0,
+            0,
+            0,
+            0.15);
 }
 
 .collapsible.default::before {
@@ -301,7 +290,7 @@ button:active {
     transform: rotate(-180deg);
 }
 
-section > .collapsible + * {
+section>.collapsible+* {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
@@ -310,7 +299,7 @@ section > .collapsible + * {
     transition: all 400ms ease;
 }
 
-section > .collapsible.active + * {
+section>.collapsible.active+* {
     display: block;
     max-height: 9999px;
     opacity: 1;
@@ -318,7 +307,7 @@ section > .collapsible.active + * {
     transition: all 400ms ease;
 }
 
-section > .collapsible + * ~ * {
+section>.collapsible+*~* {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
@@ -327,7 +316,7 @@ section > .collapsible + * ~ * {
     transition: all 400ms ease;
 }
 
-section > .collapsible.active + * ~ * {
+section>.collapsible.active+*~* {
     display: block;
     max-height: 9999px;
     opacity: 1;
