@@ -1,7 +1,11 @@
 {
     "name": "Russian Cases - Русские Падежи",
     "cleanUrls": true,
-    "rewrites": [
-        { "source": "/(.*)", "destination": "/dist/pages/$1" }
-    ]
+    "redirects": [
+    {
+      "source": "/",
+      "destination": "/home",
+      "permanent": true
+    }
+  ]
 }
