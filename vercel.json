@@ -1,4 +1,7 @@
 {
     "name": "Russian Cases - Русские Падежи",
-    "cleanUrls": true
+    "cleanUrls": true,
+    "rewrites": [
+        { "source": "/(.*)", "destination": "/dist/pages/$1" }
+    ]
 }
