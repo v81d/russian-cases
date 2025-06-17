@@ -73,9 +73,11 @@ body {
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(to bottom,
-                rgba(255, 255, 255, 0.7),
-                rgba(255, 255, 255, 0.1));
+        background: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.1)
+        );
         pointer-events: none;
         backdrop-filter: blur(8px);
         -webkit-backdrop-filter: blur(8px);
@@ -86,10 +88,12 @@ body {
         max-width: 60%;
         margin: auto;
         background: #fff;
-        padding: 40px;
+        padding: 50px;
         border-radius: 10px;
-        box-shadow: rgba(0, 0, 0, 0.16) 0 10px 36px 0,
-            rgba(0, 0, 0, 0.06) 0 0 0 4px, rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
+        box-shadow:
+            rgba(0, 0, 0, 0.16) 0 10px 36px 0,
+            rgba(0, 0, 0, 0.06) 0 0 0 4px,
+            rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
     }
 }
 
@@ -119,7 +123,7 @@ p {
 ul,
 ol {
     margin-bottom: 10px;
-    padding-left: 20px;
+    padding-left: 30px;
 }
 
 li {
@@ -195,7 +199,9 @@ button {
     transition: all 300ms ease;
     min-width: 150px;
     box-sizing: border-box;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
+    box-shadow:
+        0 6px 15px rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
 }
 
 .button:hover,
@@ -203,7 +209,9 @@ button:hover {
     background-color: #ff4f3f;
     transform: translateY(-2px);
     scale: 1.01;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 0 -3px 0 inset;
+    box-shadow:
+        0 6px 15px rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.1) 0 -3px 0 inset;
     cursor: pointer;
 }
 
@@ -260,7 +268,9 @@ button:active {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    transition: content 150ms ease, transform 300ms ease,
+    transition:
+        content 150ms ease,
+        transform 300ms ease,
         background-color 300ms ease;
     transition-behavior: allow-discrete;
 }
@@ -270,10 +280,7 @@ button:active {
 }
 
 .collapsible:active::before {
-    background-color: rgba(0,
-            0,
-            0,
-            0.15);
+    background-color: rgba(0, 0, 0, 0.15);
 }
 
 .collapsible.default::before {
@@ -294,7 +301,7 @@ button:active {
     transform: rotate(-180deg);
 }
 
-section>.collapsible+* {
+section > .collapsible + * {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
@@ -303,7 +310,7 @@ section>.collapsible+* {
     transition: all 400ms ease;
 }
 
-section>.collapsible.active+* {
+section > .collapsible.active + * {
     display: block;
     max-height: 9999px;
     opacity: 1;
@@ -311,7 +318,7 @@ section>.collapsible.active+* {
     transition: all 400ms ease;
 }
 
-section>.collapsible+*~* {
+section > .collapsible + * ~ * {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
@@ -320,7 +327,7 @@ section>.collapsible+*~* {
     transition: all 400ms ease;
 }
 
-section>.collapsible.active+*~* {
+section > .collapsible.active + * ~ * {
     display: block;
     max-height: 9999px;
     opacity: 1;

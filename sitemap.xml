@@ -1,60 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-
-    <url>
-        <loc>https://russian-cases.vercel.app/</loc>
-        <lastmod>2025-01-15T22:45:19+00:00</lastmod>
-        <priority>1.00</priority>
-    </url>
-    <url>
-        <loc>https://russian-cases.vercel.app/nominative</loc>
-        <lastmod>2025-01-15T22:45:20+00:00</lastmod>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://russian-cases.vercel.app/genitive</loc>
-        <lastmod>2025-01-15T22:45:20+00:00</lastmod>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://russian-cases.vercel.app/accusative</loc>
-        <lastmod>2025-01-15T22:45:20+00:00</lastmod>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://russian-cases.vercel.app/prepositional</loc>
-        <lastmod>2025-01-15T22:45:20+00:00</lastmod>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://russian-cases.vercel.app/instrumental</loc>
-        <lastmod>2025-01-15T22:45:20+00:00</lastmod>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://russian-cases.vercel.app/dative</loc>
-        <lastmod>2025-01-15T22:45:21+00:00</lastmod>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://russian-cases.vercel.app/practice</loc>
-        <lastmod>2025-01-15T22:45:21+00:00</lastmod>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://russian-cases.vercel.app/alphabet</loc>
-        <lastmod>2025-01-15T22:45:21+00:00</lastmod>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://russian-cases.vercel.app/grammar</loc>
-        <lastmod>2025-01-15T22:45:21+00:00</lastmod>
-        <priority>0.80</priority>
-    </url>
-
-
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://russian-cases.vercel.app/</loc>
+  </url>
+  <url>
+    <loc>https://russian-cases.vercel.app/nominative.html</loc>
+  </url>
+  <url>
+    <loc>https://russian-cases.vercel.app/genitive.html</loc>
+  </url>
+  <url>
+    <loc>https://russian-cases.vercel.app/accusative.html</loc>
+  </url>
+  <url>
+    <loc>https://russian-cases.vercel.app/prepositional.html</loc>
+  </url>
+  <url>
+    <loc>https://russian-cases.vercel.app/instrumental.html</loc>
+  </url>
+  <url>
+    <loc>https://russian-cases.vercel.app/dative.html</loc>
+  </url>
+  <url>
+    <loc>https://russian-cases.vercel.app/practice.html</loc>
+  </url>
+  <url>
+    <loc>https://russian-cases.vercel.app/alphabet.html</loc>
+  </url>
+  <url>
+    <loc>https://russian-cases.vercel.app/grammar.html</loc>
+  </url>
 </urlset>

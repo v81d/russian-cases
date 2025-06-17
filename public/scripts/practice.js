@@ -40,21 +40,21 @@ function handleNext() {
         if (questionCount > questions.length)
             localStorage.setItem(
                 "questionCount-RussianCases",
-                questions.length
+                questions.length,
             );
         else localStorage.setItem("questionCount-RussianCases", questionCount);
 
         window.history.replaceState(
             null,
             null,
-            "?questions=" + localStorage.getItem("questionCount-RussianCases")
+            "?questions=" + localStorage.getItem("questionCount-RussianCases"),
         );
 
         document.getElementById("onboarding").style.display = "none";
         document.getElementById("quiz").style.display = "block";
 
         totalQuestions = Math.ceil(
-            localStorage.getItem("questionCount-RussianCases")
+            localStorage.getItem("questionCount-RussianCases"),
         );
 
         showRandomQuestion();
@@ -103,7 +103,7 @@ function showRandomQuestion() {
 
         questionData.shuffledOptions = shuffledOptions;
         questionData.shuffledCorrectIndex = shuffledOptions.findIndex(
-            (option) => option.originalIndex === questionData.correct
+            (option) => option.originalIndex === questionData.correct,
         );
 
         shuffledOptions.forEach((option, index) => {
@@ -119,8 +119,9 @@ function showRandomQuestion() {
             const buttonSpan = document.createElement("span");
             buttonSpan.style = "display: flex; align-items: center;";
             buttonSpan.className = "quiz-radio-button";
-            buttonSpan.innerHTML = `<h3 style="display: flex; margin: 0 12.5px 0 0; padding: 0; background-color: #B1BDC2; color: white; border-radius: 8px; min-width: 32px; width: 32px; height: 100%; align-items: center; justify-content: center;">${index + 1
-                }</h3> ${option.text}`;
+            buttonSpan.innerHTML = `<h3 style="display: flex; margin: 0 12.5px 0 0; padding: 0; background-color: #B1BDC2; color: white; border-radius: 8px; min-width: 32px; width: 32px; height: 100%; align-items: center; justify-content: center;">${
+                index + 1
+            }</h3> ${option.text}`;
 
             label.appendChild(input);
             label.appendChild(buttonSpan);
@@ -140,8 +141,9 @@ function showRandomQuestion() {
             const buttonSpan = document.createElement("span");
             buttonSpan.style = "display: flex; align-items: center;";
             buttonSpan.className = "quiz-radio-button";
-            buttonSpan.innerHTML = `<h3 style="display: flex; margin: 0 12.5px 0 0; padding: 0; background-color: #B1BDC2; color: white; border-radius: 8px; min-width: 32px; width: 32px; height: 100%; align-items: center; justify-content: center;">${index + 1
-                }</h3> ${option}`;
+            buttonSpan.innerHTML = `<h3 style="display: flex; margin: 0 12.5px 0 0; padding: 0; background-color: #B1BDC2; color: white; border-radius: 8px; min-width: 32px; width: 32px; height: 100%; align-items: center; justify-content: center;">${
+                index + 1
+            }</h3> ${option}`;
 
             label.appendChild(input);
             label.appendChild(buttonSpan);
@@ -179,7 +181,7 @@ function handleSubmit() {
 
     if (questionData.type === "multiple-choice") {
         const selectedOption = document.querySelector(
-            'input[name="answer"]:checked'
+            'input[name="answer"]:checked',
         );
         if (selectedOption) {
             const userAnswerIndex = parseInt(selectedOption.value, 10);
@@ -193,7 +195,7 @@ function handleSubmit() {
         }
     } else if (questionData.type === "true-false") {
         const selectedOption = document.querySelector(
-            'input[name="answer"]:checked'
+            'input[name="answer"]:checked',
         );
         if (selectedOption) {
             const userAnswerIndex = parseInt(selectedOption.value, 10);
@@ -285,11 +287,11 @@ function displayResults() {
     }
 
     document.getElementById("question").innerHTML = "Quiz Complete!";
-    document.getElementById(
-        "quiz-content"
-    ).innerHTML = `You answered ${correctAnswers} out of ${Math.round(
-        totalQuestions
-    )} question${totalQuestions > 1 ? "s" : ""
+    document.getElementById("quiz-content").innerHTML =
+        `You answered ${correctAnswers} out of ${Math.round(
+            totalQuestions,
+        )} question${
+            totalQuestions > 1 ? "s" : ""
         } correctly, receiving a score of ${score}%. ${message}<br><br>`;
 
     const overview = document.createElement("div");
@@ -299,9 +301,11 @@ function displayResults() {
 
         const answerDiv = document.createElement("div");
         answerDiv.innerHTML = `
-            <p><strong>${answer.isCorrect ? "✔️" : "❌"} Question:</strong> ${answer.question
+            <p><strong>${answer.isCorrect ? "✔️" : "❌"} Question:</strong> ${
+                answer.question
             } <sub style="color: #999;">[#${id + 1}]</sub></p>
-            <p><strong>Your Answer:</strong> ${answer.userAnswer === "" ? "Skipped" : answer.userAnswer
+            <p><strong>Your Answer:</strong> ${
+                answer.userAnswer === "" ? "Skipped" : answer.userAnswer
             } ${answer.isCorrect ? "(Correct)" : "(Incorrect)"}</p>
             <p><strong>Correct Answer:</strong> ${answer.correctAnswer}</p>
             ${userAnswers.at(-1) === answer ? "" : "<hr>"}
@@ -311,9 +315,11 @@ function displayResults() {
 
     document.getElementById("quiz-content").appendChild(overview);
     document.getElementById("submit-button").innerText = "Retry";
-    document.getElementById("submit-button").addEventListener("click", function () {
-        window.location.href = "/practice.html";
-    });
+    document
+        .getElementById("submit-button")
+        .addEventListener("click", function () {
+            window.location.href = "/practice.html";
+        });
 
     const progressDisplay = document.getElementById("progress-display");
     progressDisplay.style.width = "100%";
@@ -328,10 +334,11 @@ document.addEventListener("keyup", (event) => {
     if (event.key === "Enter") {
         document
             .querySelector(
-                `#${document.querySelector("#quiz").style.display === "block"
-                    ? "submit"
-                    : "next"
-                }-button`
+                `#${
+                    document.querySelector("#quiz").style.display === "block"
+                        ? "submit"
+                        : "next"
+                }-button`,
             )
             .click();
     } else if (
@@ -340,7 +347,7 @@ document.addEventListener("keyup", (event) => {
     ) {
         document
             .querySelector(
-                `input[type="radio"][value="${Number(event.key) - 1}"]`
+                `input[type="radio"][value="${Number(event.key) - 1}"]`,
             )
             .click();
     } else {

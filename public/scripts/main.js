@@ -73,7 +73,7 @@ function toggleCollapse() {
                         item.style.display = "none";
                     }
                 },
-                { once: true }
+                { once: true },
             );
         } else {
             item.classList.add("active");
@@ -98,24 +98,6 @@ function getElementsAfter(element) {
     return elements;
 }
 
-function setFooter() {
-    const footer = document.createElement("footer");
-    footer.style.width = "100%";
-    footer.style.marginTop = "40px";
-
-    const footerText = document.createElement("p");
-    footerText.style.textAlign = "right";
-    footerText.style.marginBottom = "0";
-    footerText.style.color = "#999";
-    footerText.style.fontSize = "0.7rem";
-    footerText.innerHTML =
-        'Made by <a href="https://github.com/v81d" style="color: inherit; text-decoration: underline dotted;">v81d</a>. Thank you for visiting Russian Cases!';
-
-    const container = document.querySelector(".container");
-    container.appendChild(footer);
-}
-
 window.addEventListener("load", function () {
     document.body.style.display = "block";
-    setFooter();
 });

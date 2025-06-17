@@ -67,19 +67,22 @@ input[type="radio"] {
     border: 2px solid #dde7eb;
     border-radius: 12px;
     cursor: pointer;
-    box-shadow: 0 0 0 rgba(0, 0, 0, 0), rgb(221, 231, 235) 0 -2px 0 inset;
+    box-shadow:
+        0 0 0 rgba(0, 0, 0, 0),
+        rgb(221, 231, 235) 0 -2px 0 inset;
     transition: all 400ms ease;
 }
 
-input[type="radio"]:checked+.quiz-radio-button,
-input[type="radio"]:checked+.onboarding-radio-button {
+input[type="radio"]:checked + .quiz-radio-button,
+input[type="radio"]:checked + .onboarding-radio-button {
     background-color: #dde7eb;
     box-shadow: none;
 }
 
 .quiz-radio-button:hover,
 .onboarding-radio-button:hover {
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05),
+    box-shadow:
+        0 6px 15px rgba(0, 0, 0, 0.05),
         rgb(221, 231, 235) 0 -2px 0 inset;
     transform: translateY(-2px);
     scale: 1.01;
@@ -109,7 +112,9 @@ input[type="radio"]:checked+.onboarding-radio-button {
     color: slategray;
     border: 2px solid #dde7eb;
     border-radius: 12px;
-    box-shadow: 0 0 0 rgba(0, 0, 0, 0), rgb(221, 231, 235) 0 -2px 0 inset;
+    box-shadow:
+        0 0 0 rgba(0, 0, 0, 0),
+        rgb(221, 231, 235) 0 -2px 0 inset;
     transition: all 400ms ease;
     box-sizing: border-box;
     outline: none;
@@ -117,7 +122,8 @@ input[type="radio"]:checked+.onboarding-radio-button {
 }
 
 .controller:hover {
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05),
+    box-shadow:
+        0 6px 15px rgba(0, 0, 0, 0.05),
         rgb(221, 231, 235) 0 -2px 0 inset;
     scale: 1.01;
     background-color: transparent;
